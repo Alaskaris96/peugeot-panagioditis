@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ευστάθιος Παναγιωτίδης | Αυτοκίνητα & Ανταλλακτικά</title>
+    <title>Ευστάθιος Παναγιωτίδης | Συνεργείο Αυτοκινήτων & Πωλήσεις Οχημάτων</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🚗</span>
+                <span class="logo-text" data-i18n="nav_logo">Παναγιωτίδης</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" data-i18n="nav_about">Σχετικά</a>
+                <a href="#services" data-i18n="nav_services">Υπηρεσίες</a>
+                <a href="#cars" data-i18n="nav_cars">Αυτοκίνητα</a>
+                <a href="#contact" data-i18n="nav_contact">Επικοινωνία</a>
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-el" onclick="setLanguage('el')">ΕΛ</button>
+                <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero_badge">Ανταλλακτικά · Συνεργείο · Φανοποιείο</div>
+            <div class="hero-badge" data-i18n="hero_badge">Συνεργείο · Καινούρια & Μεταχειρισμένα Αυτοκίνητα ·
+                Ανταλλακτικά</div>
+            <h1 class="hero-title">
+                <span data-i18n="hero_title_1">Ευστάθιος</span>
+                <span data-i18n="hero_title_2">Παναγιωτίδης</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Ανταλλακτικά Αυτοκινήτων · Συνεργείο · Φανοποιείο</p>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Συνεργείο Αυτοκινήτων · Πωλήσεις Καινούριων &
+                Μεταχειρισμένων · Ανταλλακτικά & Φανοποιείο</p>
+            <div class="hero-actions">
+                <a href="#cars" class="btn btn-primary" data-i18n="hero_cta_cars">Δείτε τα Αυτοκίνητα</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Επικοινωνήστε</a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,64 C360,120 720,0 1080,64 C1260,96 1380,80 1440,64 L1440,120 L0,120 Z"
+                    fill="var(--color-bg)" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about_tag">Σχετικά με εμάς</span>
+                <h2 class="section-title" data-i18n="about_title">Η Επιχείρησή μας</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_p1">Ο Ευστάθιος Παναγιωτίδης προσφέρει πλήρη φάσμα υπηρεσιών για τα αυτοκίνητά
+                        σας, με έδρα τη Βέροια.</p>
+                    <p data-i18n="about_p2">Ειδικευόμαστε σε γνήσια ανταλλακτικά, επαγγελματικό συνεργείο συντήρησης και
+                        εξειδικευμένο φανοποιείο.</p>
+                    <p data-i18n="about_p3">Επίσης, εισάγουμε ποιοτικά εφελκυσμένα αυτοκίνητα από το εξωτερικό,
+                        προσφέροντας ευρεία επιλογή μοντέλων σε ανταγωνιστικές τιμές.</p>
+                    <p data-i18n="about_p1">Η επιχείρηση Ευστάθιος Παναγιωτίδης, με έδρα τη Βέροια, προσφέρει
+                        ολοκληρωμένες υπηρεσίες συνεργείου και συντήρησης αυτοκινήτων, καθώς και εμπορία οχημάτων.</p>
+                    <p data-i18n="about_p2">Διαθέτουμε σύγχρονο συνεργείο, φανοποιείο - βαφείο και πλήρη γκάμα από
+                        γνήσια και ποιοτικά ανταλλακτικά για κάθε όχημα.</p>
+                    <p data-i18n="about_p3">Παράλληλα, δραστηριοποιούμαστε στην πώληση καινούριων και επιλεγμένων
+                        μεταχειρισμένων αυτοκινήτων, ελεγμένων με τα υψηλότερα πρότυπα αξιοπιστίας και ασφάλειας.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-card-icon">🏢</div>
+                        <h3 data-i18n="about_card1_title">Μονοπρόσωπη Ι.Κ.Ε.</h3>
+                        <p data-i18n="about_card1_desc">Επαγγελματική επιχείρηση με μακροχρόνια παρουσία στην αγορά.</p>
+                        <p data-i18n="about_card1_desc">Επαγγελματισμός, συνέπεια και πολυετής εμπειρία στον χώρο του
+                            αυτοκινήτου.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">🔧</div>
+                        <h3 data-i18n="about_card2_title">Εξειδικευμένο Προσωπικό</h3>
+                        <p data-i18n="about_card2_desc">Πιστοποιημένοι τεχνικοί με πολυετή εμπειρία.</p>
+                        <h3 data-i18n="about_card2_title">Εξειδικευμένο Συνεργείο</h3>
+                        <p data-i18n="about_card2_desc">Έμπειροι τεχνικοί και σύγχρονος διαγνωστικός εξοπλισμός.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">🚙</div>
+                        <h3 data-i18n="about_card3_title">Εισαγωγή Αυτοκινήτων</h3>
+                        <p data-i18n="about_card3_desc">Ποιοτικά εφελκυσμένα αυτοκίνητα σε καλή κατάσταση.</p>
+                        <div class="about-card-icon">🚗</div>
+                        <h3 data-i18n="about_card3_title">Καινούρια & Μεταχειρισμένα</h3>
+                        <p data-i18n="about_card3_desc">Εγγυημένα και προσεκτικά ελεγμένα αυτοκίνητα στις καλύτερες
+                            τιμές.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-alt" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="services_tag">Υπηρεσίες</span>
+                <h2 class="section-title" data-i18n="services_title">Τι Προσφέρουμε</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3 data-i18n="service1_title">Ανταλλακτικά Αυτοκινήτων</h3>
+                    <p data-i18n="service1_desc">Γνήσια και ποιοτικά ανταλλακτικά για όλα τα μοντέλα αυτοκινήτων.</p>
+                    <div class="service-icon">🔧</div>
+                    <h3 data-i18n="service1_title">Συνεργείο & Service</h3>
+                    <p data-i18n="service1_desc">Ολοκληρωμένη τεχνική υποστήριξη, τακτικό service, διάγνωση βλαβών και
+                        μηχανικές επισκευές.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">�</div>
+                    <h3 data-i18n="service2_title">Συνεργείο</h3>
+                    <p data-i18n="service2_desc">Πλήρης συντήρηση, επισκευή και διάγνωση με σύγχρονα εργαλεία.</p>
+                    <div class="service-icon">�🚗</div>
+                    <h3 data-i18n="service2_title">Πωλήσεις Αυτοκινήτων</h3>
+                    <p data-i18n="service2_desc">Εμπορία καινούριων και πιστοποιημένων μεταχειρισμένων αυτοκινήτων με
+                        εγγύηση ποιότητας.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 data-i18n="service3_title">Φανοποιείο</h3>
+                    <p data-i18n="service3_desc">Εξειδικευμένες εργασίες φανοποιίας και βαφής για την επιστροφή του
+                        αυτοκινήτου σας στην αρχική του κατάσταση.</p>
+                    <div class="service-icon">⚙️</div>
+                    <h3 data-i18n="service3_title">Ανταλλακτικά Αυτοκινήτων</h3>
+                    <p data-i18n="service3_desc">Γνήσια και επώνυμα ανταλλακτικά, λιπαντικά και αναλώσιμα για όλες τις
+                        μάρκες.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3 data-i18n="service4_title">Πώληση Αυτοκινήτων</h3>
+                    <p data-i18n="service4_desc">Εισαγωγή και πώληση ποιοτικών εφελκυσμένων αυτοκινήτων σε
+                        ανταγωνιστικές τιμές.</p>
+                    <div class="service-icon">🎨</div>
+                    <h3 data-i18n="service4_title">Φανοποιείο & Βαφείο</h3>
+                    <p data-i18n="service4_desc">Αποκατάσταση ζημιών, ευθυγράμμιση, βαφές και τοπικές επισκευές με
+                        άριστο φινίρισμα.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="section" id="cars">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="cars_tag">Αυτοκίνητα</span>
+                <h2 class="section-title" data-i18n="cars_title">Δείτε τα Αυτοκίνητά μας</h2>
+                <p class="section-desc" data-i18n="cars_desc">Επισκεφθείτε το προφίλ μας στο car.gr για να δείτε τα
+                    διαθέσιμα εφελκυσμένα αυτοκίνητα.</p>
+                <h2 class="section-title" data-i18n="cars_title">Διαθέσιμα Αυτοκίνητα</h2>
+                <p class="section-desc" data-i18n="cars_desc">Δείτε τον ενημερωμένο στόλο καινούριων και μεταχειρισμένων
+                    οχημάτων μας στο car.gr.</p>
+            </div>
+            <div class="cars-cta">
+                <a href="https://panagiotidis-ike.car.gr/cars/" target="_blank" rel="noopener"
+                    class="btn btn-primary btn-large">
+                    <span data-i18n="cars_cta">Δείτε τα Αυτοκίνητα στο car.gr</span>
+                    <span data-i18n="cars_cta">Δείτε όλα τα Αυτοκίνητα στο car.gr</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact_tag">Επικοινωνία</span>
+                <h2 class="section-title" data-i18n="contact_title">Επικοινωνήστε μαζί μας</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 data-i18n="contact_addr_label">Διεύθυνση</h4>
+                            <p data-i18n="contact_addr">3ο χλμ. Π.Ε.Ο. Βέροιας - Θεσσαλονίκης</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4 data-i18n="contact_phone_label">Τηλέφωνο</h4>
+                            <h4 data-i18n="contact_phone_label">Τηλέφωνα Επικοινωνίας</h4>
+                            <p><a href="tel:2331073677">23310 73677</a> · <a href="tel:2331022435">23310 22435</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📠</div>
+                        <div>
+                            <h4 data-i18n="contact_fax_label">FAX</h4>
+                            <p>23310 61111</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4 data-i18n="contact_hours_label">Ωράριο Λειτουργίας</h4>
+                            <p data-i18n="contact_hours">Δευτέρα - Παρασκευή: 08:00 - 18:00<br>Σάββατο: 09:00 - 14:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.938966524219!2d22.22457707640705!3d40.542937547947645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1357928de21c82f7%3A0x6ce5248163e00cc2!2zzqDOsc69zrHOs865z4nPhM6vzrTOt8-CIFBldWdlb3Q!5e0!3m2!1sel!2sgr!4v1789122608170!5m2!1sel!2sgr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🚗</span>
+                    <span data-i18n="footer_name">Ευστάθιος Παναγιωτίδης</span>
+                    <p data-i18n="footer_desc">Μονοπρόσωπη Ι.Κ.Ε. — Ανταλλακτικά & Συνεργείο</p>
+                    <p data-i18n="footer_desc">Μονοπρόσωπη Ι.Κ.Ε. — Συνεργείο & Πωλήσεις Αυτοκινήτων</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav_about">Σχετικά</a>
+                    <a href="#services" data-i18n="nav_services">Υπηρεσίες</a>
+                    <a href="#cars" data-i18n="nav_cars">Αυτοκίνητα</a>
+                    <a href="#contact" data-i18n="nav_contact">Επικοινωνία</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">© 2026 Ευστάθιος Παναγιωτίδης. Με επιφύλαξη παντός δικαιώματος.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
